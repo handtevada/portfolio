@@ -25,17 +25,19 @@ class App extends Component {
             <Terminal command={this.state.command} />
           </div>
           <div className="tags-section">
+            <div className="tags-title">
+              COMMAND LIST >_
+            </div>
             <ul className="tags">
-
-              <li><a>Introduce Yourself</a></li>
-              <li><a>Education</a></li>
-              <li><a>Language</a></li>
-              <li><a>Strong Skill</a></li>
-              <li><a>Programmig Skill</a></li>
-              <li><a>Soft Skill</a></li>
-              <li><a onClick={this.setCommand}>Awards</a></li>
-              <li><a onClick={this.setCommand}>Experience</a></li>
-              <li><a onClick={this.setCommand}>Contract</a></li>
+              <li><a>Introduce Myself (intro)</a></li>
+              <li><a>Education (edu)</a></li>
+              <li><a>Language (lang)</a></li>
+              <li><a>Strong Skill (stskill)</a></li>
+              <li><a>Programmig Skill (pskill)</a></li>
+              <li><a>Soft Skill (sskill)</a></li>
+              {/* <li><a>Awards (awards)</a></li> */}
+              <li><a>Experience (exp)</a></li>
+              <li><a>Contact (contract)</a></li>
             </ul>
           </div>
 
