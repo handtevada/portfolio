@@ -84,6 +84,10 @@
 .ReactBash {
     min-height: 400px;
 
+    @media screen and (min-width: 600px){
+        font-size: 15px !important; 
+    }
+
     *:focus {
         outline: none;
     }
