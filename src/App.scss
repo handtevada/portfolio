@@ -1,9 +1,13 @@
 .container {
     margin-top: 50px;
-    margin-bottom: 190px;
+    margin-bottom: 220px;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+
+    @media screen and (min-width: 600px){
+        margin-bottom: 180px !important;
+    }
 
     .title {
         font-family: 'Amatic SC', cursive;
@@ -14,10 +18,11 @@
     }
 
     .tags-section {
+
         .tags-title {
             margin-top: 10px;
             margin-bottom: 5px;
-            font-family: 'PT Sans', sans-serif;
+            font-family: 'Space Mono', monospace;
             color: #fff;
             font-weight: bold;
             font-size: 14px;
@@ -35,8 +40,8 @@
             float: left;
             line-height: 24px;
             position: relative;
-            font-size: 14px;
-            font-family: 'PT Sans', sans-serif;
+            font-size: 12px;
+            font-family: 'Space Mono', monospace;
         }
 
         .tags a {
@@ -61,7 +66,7 @@
         }
 
         .tags a:hover {
-            color: #f2d800;
+            color: rgb(35, 255, 0);
         }
 
         .tags a:hover:before {
@@ -83,6 +88,7 @@
 
 .ReactBash {
     min-height: 400px;
+    font-family: 'Share Tech Mono', monospace !important;
 
     @media screen and (min-width: 600px){
         font-size: 15px !important; 

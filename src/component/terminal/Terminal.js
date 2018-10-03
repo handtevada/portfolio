@@ -133,6 +133,7 @@ export const contact = {
                 .concat({ value: ">_ Intragram : Directorys" })
                 .concat({ value: ">_ Medium : medium.com/@directorys" })
                 .concat({ value: ">_ Github : github.com/handtevada" })
+                .concat({ value: ">" })
         };
     },
 };

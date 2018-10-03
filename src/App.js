@@ -26,7 +26,7 @@ class App extends Component {
           </div>
           <div className="tags-section">
             <div className="tags-title">
-              COMMAND LIST >_
+              >_ COMMAND LIST
             </div>
             <ul className="tags">
               <li><a>Introduce Myself (intro)</a></li>
