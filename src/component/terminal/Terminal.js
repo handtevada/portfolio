@@ -35,9 +35,9 @@ export const lang = {
             structure,
             cwd,
             history: history
-                .concat({ value: ">_ THAI : 4/5 => I am Programmer" })
+                .concat({ value: ">_ THAI : 4/5 => WHY! I'm Programmer" })
                 .concat({ value: ">_ ENGLISH : 3/5 => Netflix every day make you Raccoon eyes" })
-                .concat({ value: ">_ JEPANESE : 2/5 => Even the basics I'm going to forget" })
+                .concat({ value: ">_ JEPANESE : 2/5 => Simple sentence, Introduce mysefe" })
                 .concat({ value: ">" })
         };
     },
@@ -62,20 +62,22 @@ export const pskill = {
             structure,
             cwd,
             history: history
-                .concat({ value: ">_ Now, Expertise about .Net C#, Full Stack" })
+                .concat({ value: ">_ Now, Expertise about .Net C#, Full Stack Developer" })
+                .concat({ value: ">_ " })
                 .concat({ value: ">_ Backend  => 9/10" })
                 .concat({ value: ">_ Frontend => 8/10" })
                 .concat({ value: ">_ Windows => 9/10" })
                 .concat({ value: ">_ Linux => 8/10" })
                 .concat({ value: ">_ " })
-                .concat({ value: ">_ LANGUAGE" })
-                .concat({ value: ">_ Good => C#, Java, C++, Javascript, CSS, Html" })
+                .concat({ value: ">_ PROGRAMMING LANGUAGE" })
+                .concat({ value: ">_ Advanced => C#, Javascript, CSS, Html" })
+                .concat({ value: ">_ Intermediate => Java, C++" })
                 .concat({ value: ">_ Beginner => Python" })
                 .concat({ value: ">_ " })
                 .concat({ value: ">_ WEB STACK & TOOLS" })
-                .concat({ value: ">_ React, Node.js, jQuery, Bootstrap, Npm, Wordpress, Sql, Firebase, Git, Docker etc." })
+                .concat({ value: ">_ React, Node.js, jQuery, Bootstrap, Scss, Npm, Wordpress, Sql, Firebase, Git, Docker" })
                 .concat({ value: ">_ " })
-                .concat({ value: ">_ INTERESTED" })
+                .concat({ value: ">_ INTERESTED NOW" })
                 .concat({ value: ">_ Blockchain, Electronics" })
                 .concat({ value: ">" })
         };
@@ -114,6 +116,7 @@ export const exp = {
             structure,
             cwd,
             history: history
+                .concat({ value: ">_ 2012 : Apprentice : TESA Hyper Camp" })
                 .concat({ value: ">_ 2013 - 2015 : Java Developer, AR Soft Advanced Research Group Co., Ltd." })
                 .concat({ value: ">_ 2015 - NOW : .Net Developer, Piesoft Co., Ltd." })
                 .concat({ value: ">" })
@@ -130,7 +133,7 @@ export const contact = {
             history: history
                 .concat({ value: ">_ Email : algobaleno.un@gmail.com" })
                 .concat({ value: ">_ Twitter : @Algobaleno" })
-                .concat({ value: ">_ Intragram : Directorys" })
+                .concat({ value: ">_ Instagram : Directorys" })
                 .concat({ value: ">_ Medium : medium.com/@directorys" })
                 .concat({ value: ">_ Github : github.com/handtevada" })
                 .concat({ value: ">" })
@@ -141,14 +144,11 @@ export const contact = {
 class terminal extends Component {
     constructor(props) {
         super(props);
-        this.state = {
-            history: [{ value: 'Welcome to the my profile!' }]
-                .concat({ value: 'Please select a question below.' })
-        }
+        this.state = {}
     }
 
     render() {
-        const extensions = { intro, edu, lang, stskill, pskill, sskill, awards, exp, contact  };
+        const extensions = { intro, edu, lang, stskill, pskill, sskill, awards, exp, contact };
         const history = [{ value: 'Welcome to the my profile!' }]
             .concat({ value: 'Please typed the command' });
         return (
