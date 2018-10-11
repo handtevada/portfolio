@@ -37,7 +37,7 @@ class App extends Component {
               <li><a>Soft Skill (sskill)</a></li>
               {/* <li><a>Awards (awards)</a></li> */}
               <li><a>Experience (exp)</a></li>
-              <li><a>Contact (contract)</a></li>
+              <li><a>Contact (contact)</a></li>
             </ul>
           </div>
 
