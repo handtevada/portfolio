@@ -5,7 +5,7 @@
     margin-right: auto;
     width: 80%;
 
-    @media screen and (min-width: 600px){
+    @media screen and (min-width: 600px) {
         margin-bottom: 180px !important;
     }
 
@@ -18,7 +18,6 @@
     }
 
     .tags-section {
-
         .tags-title {
             margin-top: 10px;
             margin-bottom: 5px;
@@ -48,7 +47,7 @@
             padding: 0 12px 0 10px;
             cursor: pointer;
             color: #fff;
-            background-color: rgba(6, 27, 59, 0.3411764705882353);
+            background-color: rgba(6, 27, 59, 0.3411764706);
             text-decoration: none;
             margin: 2px;
             -moz-border-radius-bottomright: 30px;
@@ -90,8 +89,8 @@
     min-height: 400px;
     font-family: 'Share Tech Mono', monospace !important;
 
-    @media screen and (min-width: 600px){
-        font-size: 15px !important; 
+    @media screen and (min-width: 600px) {
+        font-size: 15px !important;
     }
 
     *:focus {
