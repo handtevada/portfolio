@@ -40,7 +40,7 @@ export const lang = {
                     value: '>_ ENGLISH : 3/5 => Netflix every day make you Raccoon eyes'
                 })
                 .concat({
-                    value: '>_ JEPANESE : 2/5 => Simple sentence, Introduce mysefe'
+                    value: '>_ JEPANESE : 2/5 => Simple sentence, Introduce myself'
                 })
                 .concat({ value: '>' })
         };
