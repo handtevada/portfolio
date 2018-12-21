@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Terminal from 'react-bash';
 
 export const intro = {
@@ -171,7 +171,5 @@ class terminal extends Component {
         return <Terminal prefix={'portfolio'} theme={Terminal.Themes.DARK} history={history} extensions={extensions} />;
     }
 }
-
-terminal.propTypes = {};
 
 export default terminal;

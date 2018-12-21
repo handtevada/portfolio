@@ -10,10 +10,6 @@ class App extends Component {
         };
     }
 
-    setCommand = () => {
-        this.setState({ command: 'introduce' });
-    };
-
     render() {
         return (
             <div>
