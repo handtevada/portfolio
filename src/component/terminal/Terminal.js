@@ -77,16 +77,16 @@ export const pskill = {
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ PROGRAMMING LANGUAGE' })
                 .concat({ value: '>_ Advanced => C#, Javascript, CSS, Html' })
-                .concat({ value: '>_ Intermediate => Java, C++' })
+                .concat({ value: '>_ Intermediate => Java, C++, PHP' })
                 .concat({ value: '>_ Beginner => Python' })
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ WEB STACK & TOOLS' })
                 .concat({
-                    value: '>_ React, Node.js, jQuery, Bootstrap, Scss, Npm, Wordpress, Sql, Firebase, Git, Docker'
+                    value: '>_ React, Node.js, jQuery, Bootstrap, Lumen, Scss, Wordpress, Sql, Firebase, Git, Docker, Kafka, Kong'
                 })
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ INTERESTED NOW' })
-                .concat({ value: '>_ Blockchain, Electronics' })
+                .concat({ value: '>_ Blockchain, Big Data, UX/UI, Artificial Intelligence' })
                 .concat({ value: '>' })
         };
     }
