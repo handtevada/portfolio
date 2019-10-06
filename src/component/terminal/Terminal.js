@@ -35,12 +35,12 @@ export const lang = {
             structure,
             cwd,
             history: history
-                .concat({ value: ">_ THAI : 4/5 => WHY! I'm Programmer" })
+                .concat({ value: ">_ THAI : 4/5 => WHY! I'm a Programmer" })
                 .concat({
                     value: '>_ ENGLISH : 3/5 => Netflix every day make you Raccoon eyes'
                 })
                 .concat({
-                    value: '>_ JEPANESE : 2/5 => Simple sentence, Introduce myself'
+                    value: '>_ JAPANESE : 2/5 => Simple sentence, Introduce myself'
                 })
                 .concat({ value: '>' })
         };
@@ -165,8 +165,8 @@ class terminal extends Component {
             exp,
             contact
         };
-        const history = [{ value: 'Welcome to the my profile!' }].concat({
-            value: 'Please typed the command'
+        const history = [{ value: 'Welcome to my profile!' }].concat({
+            value: 'Please type the command'
         });
         return <Terminal prefix={'portfolio'} theme={Terminal.Themes.DARK} history={history} extensions={extensions} />;
     }
