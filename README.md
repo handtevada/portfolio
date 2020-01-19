@@ -13,7 +13,7 @@ npm install
 
 Example [Demo](https://portfolio-c13dc.firebaseapp.com/)
 
-directory
+Directory inside project similar [create-react-app](https://github.com/facebook/create-react-app) 
 
 ```
 portfolio
