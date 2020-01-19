@@ -22,29 +22,29 @@ class App extends Component {
                         <div className="tags-title">>_ COMMAND LIST</div>
                         <ul className="tags">
                             <li>
-                                <a>Introduce Myself (intro)</a>
+                                <a href="#intro">Introduce Myself (intro)</a>
                             </li>
                             <li>
-                                <a>Education (edu)</a>
+                                <a href="#edu">Education (edu)</a>
                             </li>
                             <li>
-                                <a>Language (lang)</a>
+                                <a href="#lang">Language (lang)</a>
                             </li>
                             <li>
-                                <a>Strong Skill (stskill)</a>
+                                <a href="#stskill">Strong Skill (stskill)</a>
                             </li>
                             <li>
-                                <a>Programming Skill (pskill)</a>
+                                <a href="#pskill">Programming Skill (pskill)</a>
                             </li>
                             <li>
-                                <a>Soft Skill (sskill)</a>
+                                <a href="#sskill">Soft Skill (sskill)</a>
                             </li>
                             {/* <li><a>Awards (awards)</a></li> */}
                             <li>
-                                <a>Experience (exp)</a>
+                                <a href="#exp">Experience (exp)</a>
                             </li>
                             <li>
-                                <a>Contact (contact)</a>
+                                <a href="#contact">Contact (contact)</a>
                             </li>
                         </ul>
                     </div>

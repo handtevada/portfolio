@@ -8,8 +8,10 @@ export const intro = {
             cwd,
             history: history
                 .concat({ value: ">_ Hi, I'm Keerati Yuonghirun, Tung" })
-                .concat({ value: '>_ November 21, 1990, THAILAND' })
-                .concat({ value: '>_ Now, .Net Developer, Full Stack, Blogger' })
+                .concat({ value: '>_ November 21, 1990, Bangkok, THAILAND' })
+                .concat({ value: '>_ Grew up in Kamphaeng Phet like normal guy.' })
+                .concat({ value: '>_ Now, .Net C# and Node JS Developer, Full Stack, Blogger.' })
+                .concat({ value: '>_ Future, I wanna be YouTuber' })
                 .concat({ value: '>' })
         };
     }
@@ -22,8 +24,11 @@ export const edu = {
             cwd,
             history: history
                 .concat({ value: '>_ Bachelor of Engineering Program' })
-                .concat({ value: '>_ Computer Engineering, Naresuan University' })
+                .concat({ value: '>_ Computer Engineering, Naresuan University (Phitsanulok)' })
                 .concat({ value: '>_ Grade point average : 2.7' })
+                .concat({ value: '>_' })
+                .concat({ value: '>_ High School' })
+                .concat({ value: '>_ Prankratai Pittayakom School (Kamphaeng Phet)' })
                 .concat({ value: '>' })
         };
     }
@@ -36,12 +41,8 @@ export const lang = {
             cwd,
             history: history
                 .concat({ value: ">_ THAI : 4/5 => WHY! I'm a Programmer" })
-                .concat({
-                    value: '>_ ENGLISH : 3/5 => Netflix every day make you Raccoon eyes'
-                })
-                .concat({
-                    value: '>_ JAPANESE : 2/5 => Simple sentence, Introduce myself'
-                })
+                .concat({ value: '>_ ENGLISH : 3/5 => Can survive in foreign country. Read and write are pretty good.' })
+                .concat({ value: '>_ JAPANESE : 2/5 => Simple sentence, Introduce myself' })
                 .concat({ value: '>' })
         };
     }
@@ -55,6 +56,7 @@ export const stskill = {
             history: history
                 .concat({ value: '>_ Learn fast Eat faster' })
                 .concat({ value: ">_ Can talk just one word for a day 'KRUB' :)" })
+                .concat({ value: ">_ Succeed in quitting Facebook" })
                 .concat({ value: '>' })
         };
     }
@@ -67,26 +69,26 @@ export const pskill = {
             cwd,
             history: history
                 .concat({
-                    value: '>_ Now, Expertise about .Net C#, Full Stack Developer'
+                    value: '>_ Now, Expertise about .Net C#, Node JS, Full Stack Developer'
                 })
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ Backend  => 9/10' })
                 .concat({ value: '>_ Frontend => 8/10' })
-                .concat({ value: '>_ Windows => 9/10' })
-                .concat({ value: '>_ Linux => 8/10' })
+                .concat({ value: '>_ Windows Server => 9/10' })
+                .concat({ value: '>_ Linux Server => 8/10' })
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ PROGRAMMING LANGUAGE' })
-                .concat({ value: '>_ Advanced => C#, Javascript, CSS, Html' })
+                .concat({ value: '>_ Advanced => C#, Node JS' })
                 .concat({ value: '>_ Intermediate => Java, C++, PHP' })
                 .concat({ value: '>_ Beginner => Python' })
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ WEB STACK & TOOLS' })
                 .concat({
-                    value: '>_ React, Node.js, jQuery, Bootstrap, Lumen, Scss, Wordpress, Sql, Firebase, Git, Docker, Kafka, Kong'
+                    value: '>_ React, Node.js, jQuery, Lumen, WordPress, MySql, MongoDB, MicrosoftSQL, Firebase, Git, Docker, Kafka, Kong, GCP, GKE'
                 })
                 .concat({ value: '>_ ' })
                 .concat({ value: '>_ INTERESTED NOW' })
-                .concat({ value: '>_ Blockchain, Big Data, UX/UI, Artificial Intelligence' })
+                .concat({ value: '>_ UX/UI, Artificial Intelligence, Cloud Technology, Politics and Podcasts.' })
                 .concat({ value: '>' })
         };
     }
@@ -98,8 +100,12 @@ export const sskill = {
             structure,
             cwd,
             history: history
-                .concat({ value: '>_ Photographer => IG : Directorysc' })
-                .concat({ value: '>_ Blogger => engineerindy.com (No Update)' })
+                .concat({ value: '>_ Photographer => IG : Directorysc (everyday story)' })
+                .concat({ value: '>_ Medium => medium.com/@directorys (About technology or programming)' })
+                .concat({ value: '>_ Blogger => engineerindy.com (About review and general thing)' })
+                .concat({ value: '>_ Sports => Tennis, Table Tennis, Go' })
+                .concat({ value: '>_ Games => ROV (For now)' })
+                .concat({ value: '>_ Treader => Stock, Crypto' })
                 .concat({ value: '>' })
         };
     }
@@ -121,11 +127,10 @@ export const exp = {
             structure,
             cwd,
             history: history
+                .concat({ value: '>_ 2019 - Now : Software Engineer, Tangerine Co.,Ltd.' })
+                .concat({ value: '>_ 2015 - 2019 : C#.NET Developer, Piesoft Co.,Ltd.' })
+                .concat({ value: '>_ 2013 - 2015 : Java Developer, AR Soft - Advanced Research Group Co.,Ltd.' })
                 .concat({ value: '>_ 2012 : Apprentice : TESA Hyper Camp' })
-                .concat({
-                    value: '>_ 2013 - 2015 : Java Developer, AR Soft Advanced Research Group Co., Ltd.'
-                })
-                .concat({ value: '>_ 2015 - NOW : .Net Developer, Piesoft Co., Ltd.' })
                 .concat({ value: '>' })
         };
     }
