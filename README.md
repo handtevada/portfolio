@@ -13,7 +13,7 @@ npm install
 
 Example [Demo](https://portfolio-c13dc.firebaseapp.com/)
 
-### Code Structure
+directory
 
 ```
 portfolio
@@ -42,7 +42,7 @@ portfolio
     └── serviceWorker.js
 ```
 
-## Running
+### Running
 
 ```
 npm start
