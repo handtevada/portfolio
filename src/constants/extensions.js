@@ -1,7 +1,4 @@
-import React, { Component } from 'react';
-import Terminal from 'react-bash';
-
-export const intro = {
+const intro = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -19,7 +16,7 @@ export const intro = {
   },
 };
 
-export const edu = {
+const edu = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -38,7 +35,7 @@ export const edu = {
   },
 };
 
-export const lang = {
+const lang = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -57,7 +54,7 @@ export const lang = {
   },
 };
 
-export const stskill = {
+const stskill = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -65,13 +62,13 @@ export const stskill = {
       history: history
         .concat({ value: '>_ Learn fast Eat faster' })
         .concat({ value: ">_ Can talk just one word for a day 'KRUB' :)" })
-        .concat({ value: '>_ Succeed in quitting Facebook' })
+        .concat({ value: '>_ Zero bugs' })
         .concat({ value: '>' }),
     };
   },
 };
 
-export const pskill = {
+const pskill = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -84,7 +81,7 @@ export const pskill = {
         .concat({ value: '>_ Backend  => 9/10' })
         .concat({ value: '>_ Frontend => 9/10' })
         .concat({ value: '>_ Windows Server => 9/10' })
-        .concat({ value: '>_ Linux Server => 8/10' })
+        .concat({ value: '>_ Linux Server => 9/10' })
         .concat({ value: '>_ ' })
         .concat({ value: '>_ PROGRAMMING LANGUAGE' })
         .concat({ value: '>_ Advanced => C#, Node JS' })
@@ -94,26 +91,26 @@ export const pskill = {
         .concat({ value: '>_ WEB STACK & TOOLS' })
         .concat({
           value:
-            '>_ React, Node.js, jQuery, Lumen, WordPress, MySql, MongoDB, MicrosoftSQL, Firebase, Git, Docker, Kafka, Kong, GCP, GKE',
+            '>_ React, Node.js, Lumen, WordPress, MySql, MongoDB, MicrosoftSQL, Redis, Firebase, Git, Docker, K8s, Kafka, Kong, GCP, GKE',
         })
         .concat({ value: '>_ ' })
         .concat({ value: '>_ INTERESTED NOW' })
         .concat({
-          value: '>_ UX/UI, Artificial Intelligence, Cloud Technology, Politics and Podcasts.',
+          value: '>_ UX/UI, Cloud Technology, Blockchain and Podcasts.',
         })
         .concat({ value: '>' }),
     };
   },
 };
 
-export const sskill = {
+const sskill = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
       cwd,
       history: history
         .concat({
-          value: '>_ Photographer => IG : Directorysc (everyday story)',
+          value: '>_ Photographer => IG : algobalen0 (everyday journey)',
         })
         .concat({
           value: '>_ Medium => medium.com/@directorys (About technology or programming)',
@@ -129,7 +126,7 @@ export const sskill = {
   },
 };
 
-export const awards = {
+const awards = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -139,7 +136,7 @@ export const awards = {
   },
 };
 
-export const exp = {
+const exp = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -161,7 +158,7 @@ export const exp = {
   },
 };
 
-export const contact = {
+const contact = {
   exec: ({ structure, history, cwd }, command) => {
     return {
       structure,
@@ -177,36 +174,4 @@ export const contact = {
   },
 };
 
-class terminal extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    const extensions = {
-      intro,
-      edu,
-      lang,
-      stskill,
-      pskill,
-      sskill,
-      awards,
-      exp,
-      contact,
-    };
-    const history = [{ value: 'Welcome to my profile!' }].concat({
-      value: 'Please type the command',
-    });
-    return (
-      <Terminal
-        prefix={'portfolio'}
-        theme={Terminal.Themes.DARK}
-        history={history}
-        extensions={extensions}
-      />
-    );
-  }
-}
-
-export default terminal;
+export { intro, edu, lang, stskill, pskill, sskill, awards, exp, contact };
