@@ -1,16 +1,21 @@
+import { formatDistanceToNow } from 'date-fns';
+
 const intro = {
   exec: ({ structure, history, cwd }, command) => {
+    const bDate = new Date('1990-11-21');
+    const cDate = formatDistanceToNow(bDate);
+
     return {
       structure,
       cwd,
       history: history
         .concat({ value: ">_ Hi, I'm Keerati Yuonghirun, Tung" })
-        .concat({ value: '>_ November 21, 1990, Bangkok, THAILAND' })
+        .concat({ value: `>_ November 21, 1990, Bangkok, THAILAND, Age are ${cDate}` })
         .concat({ value: '>_ Grew up in Kamphaeng Phet like normal guy.' })
         .concat({
           value: '>_ Now, .Net C# and Node JS Developer, Full Stack, Blogger.',
         })
-        .concat({ value: '>_ Future, I wanna be YouTuber' })
+        .concat({ value: '>_ Future, I wanna be startup founder.' })
         .concat({ value: '>' }),
     };
   },
@@ -78,10 +83,19 @@ const pskill = {
           value: '>_ Now, Expertise about .Net C#, Node JS, Full Stack Developer',
         })
         .concat({ value: '>_ ' })
-        .concat({ value: '>_ Backend  => 9/10' })
-        .concat({ value: '>_ Frontend => 9/10' })
-        .concat({ value: '>_ Windows Server => 9/10' })
-        .concat({ value: '>_ Linux Server => 9/10' })
+        .concat({
+          value:
+            '>_ Backend  => Building from zero, maintenance, integrate 3th party, researching new tech & libs, coaching',
+        })
+        .concat({
+          value:
+            '>_ Frontend => Building from zero, maintenance, researching new ux/ui trend & libs, coaching',
+        })
+        .concat({
+          value:
+            '>_ Windows Server => Understanding about system operation & know about how to solve problems',
+        })
+        .concat({ value: '>_ Linux Server => Can use basic Linux command & researching' })
         .concat({ value: '>_ ' })
         .concat({ value: '>_ PROGRAMMING LANGUAGE' })
         .concat({ value: '>_ Advanced => C#, Node JS' })
