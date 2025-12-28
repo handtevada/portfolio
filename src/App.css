@@ -12,7 +12,7 @@
 }
 
 .app::before {
-  content: "";
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -35,7 +35,7 @@
 }
 
 .header h1 {
-  font-family: "Amatic SC", cursive;
+  font-family: 'Amatic SC', cursive;
   font-size: 3.5em;
   font-weight: 700;
   margin: 0;
@@ -44,14 +44,14 @@
 }
 
 .command-list {
-  background: rgba(39, 43, 54, 0.47);
+  background: rgba(39, 43, 54, 0.37);
   padding: 20px;
   border-radius: 5px;
 }
 
 .command-list-header {
   color: white;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 16px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -70,7 +70,7 @@
   color: #dbdbdb;
   padding: 10px 20px;
   border-radius: 0;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 13px;
   transition: all 0.2s ease;
   white-space: nowrap;
@@ -79,7 +79,7 @@
 }
 
 .command-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 50%;
@@ -88,7 +88,9 @@
   border-radius: 0;
   background: rgba(219, 219, 219, 0.2);
   transform: translate(-50%, -50%);
-  transition: width 0.4s ease, height 0.4s ease;
+  transition:
+    width 0.4s ease,
+    height 0.4s ease;
 }
 
 .command-btn:hover::before {
@@ -102,23 +104,32 @@
   border-color: #00ff41;
   transform: scale(1.05);
   text-shadow: none;
-  animation: glitchBorder 0.3s ease-in-out infinite,
+  animation:
+    glitchBorder 0.3s ease-in-out infinite,
     colorShift 2s linear infinite;
 }
 
 @keyframes glitchBorder {
   0%,
   100% {
-    box-shadow: 2px 2px 0 #00ff41, -2px -2px 0 #ff00ff;
+    box-shadow:
+      2px 2px 0 #00ff41,
+      -2px -2px 0 #ff00ff;
   }
   25% {
-    box-shadow: -2px 2px 0 #00ff41, 2px -2px 0 #ff00ff;
+    box-shadow:
+      -2px 2px 0 #00ff41,
+      2px -2px 0 #ff00ff;
   }
   50% {
-    box-shadow: 2px -2px 0 #00ff41, -2px 2px 0 #ff00ff;
+    box-shadow:
+      2px -2px 0 #00ff41,
+      -2px 2px 0 #ff00ff;
   }
   75% {
-    box-shadow: -2px -2px 0 #00ff41, 2px 2px 0 #ff00ff;
+    box-shadow:
+      -2px -2px 0 #00ff41,
+      2px 2px 0 #ff00ff;
   }
 }
 
@@ -153,4 +164,8 @@
     font-size: 11px;
     padding: 8px 15px;
   }
+}
+
+[class*='index_editorWithTopBar'] {
+  min-height: 400px;
 }

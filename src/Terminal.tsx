@@ -1,20 +1,17 @@
-import React from "react";
-import { ReactTerminal, TerminalContext } from "react-terminal";
+import React from 'react';
+import { ReactTerminal, TerminalContext } from 'react-terminal';
 
-import { commands as commandList } from "./constants/commands";
+import { commands as commandList } from './constants/commands';
 
 const Terminal = () => {
   const terminalRef = React.useRef<HTMLDivElement>(null);
-  const { setBufferedContent, setTemporaryContent } =
-    React.useContext(TerminalContext);
-  const prompt = "portfolio $ ";
+  const { setBufferedContent, setTemporaryContent } = React.useContext(TerminalContext);
+  const prompt = 'portfolio $ ';
 
   React.useEffect(() => {
     // Auto focus terminal input when component mounts
     const timer = setTimeout(() => {
-      const terminalInput = document.querySelector(
-        ".terminal-input"
-      ) as HTMLInputElement;
+      const terminalInput = document.querySelector('.terminal-input') as HTMLInputElement;
       if (terminalInput) {
         terminalInput.focus();
       }
@@ -52,7 +49,7 @@ const Terminal = () => {
     Contact: commandList[7].result,
     clear: () => {
       setBufferedContent([]);
-      setTemporaryContent("");
+      setTemporaryContent('');
     },
   };
 
@@ -69,14 +66,14 @@ const Terminal = () => {
       <ReactTerminal
         prompt={prompt}
         themes={{
-          "custom-theme": {
-            themeBGColor: "#272B36",
-            themeToolbarColor: "#4c5063ff",
-            themeColor: "#559efeff",
-            themePromptColor: "#DBDBDB",
+          'custom-theme': {
+            themeBGColor: '#272B36',
+            themeToolbarColor: '#4c5063ff',
+            themeColor: '#559efeff',
+            themePromptColor: '#DBDBDB',
           },
         }}
-        theme="custom-theme"
+        theme='custom-theme'
         welcomeMessage={welcomeMessage}
         commands={commands}
         defaultHandler={(command: string, commandArguments: string[]) => {
@@ -87,6 +84,6 @@ const Terminal = () => {
   );
 };
 
-Terminal.displayName = "Terminal";
+Terminal.displayName = 'Terminal';
 
 export default Terminal;

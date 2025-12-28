@@ -1,5 +1,5 @@
 :root {
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   line-height: 1.5;
   font-weight: 400;
 
@@ -17,7 +17,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Space Mono", monospace;
+  font-family: 'Space Mono', monospace;
   font-size: 16px;
 }
 

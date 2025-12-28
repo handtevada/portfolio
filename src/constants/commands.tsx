@@ -1,5 +1,5 @@
-import type { JSX } from "react";
-import { formatDistanceToNow } from "date-fns";
+import type { JSX } from 'react';
+import { formatDistanceToNow } from 'date-fns';
 
 interface Command {
   name: string;
@@ -8,20 +8,19 @@ interface Command {
   result?: JSX.Element;
 }
 
-const bDate = new Date("1990-11-21");
+const bDate = new Date('1990-11-21');
 const cDate = formatDistanceToNow(bDate);
 
 export const commands: Command[] = [
   {
-    name: "Introduce Myself",
-    alias: "intro",
-    description: "Learn about me",
+    name: 'Introduce Myself',
+    alias: 'intro',
+    description: 'Learn about me',
     result: (
       <span>
         <br />
         Hello! I'm Keerati Yuonghirun (Tung), <br />
-        a passionate software developer with a love for creating innovative
-        solutions. <br />
+        a passionate software developer with a love for creating innovative solutions. <br />
         21 November 1990 ({cDate} old). <br />
         <br />
         Welcome to my portfolio terminal!
@@ -30,22 +29,21 @@ export const commands: Command[] = [
     ),
   },
   {
-    name: "Education",
-    alias: "edu",
-    description: "My educational background",
+    name: 'Education',
+    alias: 'edu',
+    description: 'My educational background',
     result: (
       <span>
         <br />
-        Bachelor of Computer Engineering, Naresuan University (Phitsanulok) —
-        GPA: 2.7.
+        Bachelor of Computer Engineering, Naresuan University (Phitsanulok) — GPA: 2.7.
         <br />
       </span>
     ),
   },
   {
-    name: "Language",
-    alias: "lang",
-    description: "Languages I speak",
+    name: 'Language',
+    alias: 'lang',
+    description: 'Languages I speak',
     result: (
       <span>
         <br />
@@ -56,9 +54,9 @@ export const commands: Command[] = [
     ),
   },
   {
-    name: "Strong Skill",
-    alias: "strong",
-    description: "My strong skills",
+    name: 'Strong Skill',
+    alias: 'strong',
+    description: 'My strong skills',
     result: (
       <span>
         <br />
@@ -70,43 +68,42 @@ export const commands: Command[] = [
     ),
   },
   {
-    name: "Programming Skill",
-    alias: "prog",
-    description: "Programming languages I know",
+    name: 'Programming Skill',
+    alias: 'prog',
+    description: 'Programming languages I know',
     result: (
       <span>
         <br />
         Now, Expertise about .Net C#, Node JS, Full Stack Developer
         <br />
         <br />
-        - Full Stack : Building systems from the ground up, maintaining and
-        evolving existing solutions, integrating third-party services,
-        researching and adopting new technologies, and coaching team members.
+        - Full Stack : Building systems from the ground up, maintaining and evolving existing
+        solutions, integrating third-party services, researching and adopting new technologies, and
+        coaching team members.
         <br />
-        - Windows Server : Understanding system operations and knowing how to
-        diagnose and resolve issues. <br />
-        - Linux Server : Familiar with basic Linux commands and experienced in
-        researching solutions. <br />
-        - Database : Experienced in designing database schemas, writing complex
-        queries, and optimizing database performance. Familiar with MySql,
-        MongoDB, MicrosoftSQL and Redis.
+        - Windows Server : Understanding system operations and knowing how to diagnose and resolve
+        issues. <br />
+        - Linux Server : Familiar with basic Linux commands and experienced in researching
+        solutions. <br />
+        - Database : Experienced in designing database schemas, writing complex queries, and
+        optimizing database performance. Familiar with MySql, MongoDB, MicrosoftSQL and Redis.
         <br />
-        - Cloud : Experienced in deploying and managing applications on cloud
-        platforms like GCP and Azure.
+        - Cloud : Experienced in deploying and managing applications on cloud platforms like GCP and
+        Azure.
         <br />
-        - DevOps : Familiar with CI/CD pipelines, containerization using Docker
-        and infrastructure as code (IaC) tools.
+        - DevOps : Familiar with CI/CD pipelines, containerization using Docker and infrastructure
+        as code (IaC) tools.
         <br />
-        - Web stack & Tools : C#, React, Node.js, Lumen, WordPress, Firebase,
-        Git, Docker, K8s, Kafka, Kong, Jenkins and more.
+        - Web stack & Tools : C#, React, Node.js, Lumen, WordPress, Firebase, Git, Docker, K8s,
+        Kafka, Kong, Jenkins and more.
         <br />
       </span>
     ),
   },
   {
-    name: "Hobbies",
-    alias: "hob",
-    description: "My hobbies",
+    name: 'Hobbies',
+    alias: 'hob',
+    description: 'My hobbies',
     result: (
       <span>
         <br />
@@ -121,9 +118,9 @@ export const commands: Command[] = [
     ),
   },
   {
-    name: "Experience",
-    alias: "exp",
-    description: "My professional experience",
+    name: 'Experience',
+    alias: 'exp',
+    description: 'My professional experience',
     result: (
       <span>
         <br />
@@ -132,16 +129,15 @@ export const commands: Command[] = [
         - 2020 - 2023: Senior Software Developer at True Co.,Ltd. <br />
         - 2019 - 2020: Software Engineer, Tangerine Co.,Ltd. <br />
         - 2015 - 2019: C#.NET Developer, Piesoft Co.,Ltd. <br />
-        - 2013 - 2015: Java Developer, AR Soft - Advanced Research Group
-        Co.,Ltd. <br />
+        - 2013 - 2015: Java Developer, AR Soft - Advanced Research Group Co.,Ltd. <br />
         - 2012: Apprentice : TESA Hyper Camp <br />
       </span>
     ),
   },
   {
-    name: "Contact",
-    alias: "contact",
-    description: "How to reach me",
+    name: 'Contact',
+    alias: 'contact',
+    description: 'How to reach me',
     result: (
       <span>
         <br />
