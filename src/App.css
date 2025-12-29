@@ -88,9 +88,7 @@
   border-radius: 0;
   background: rgba(219, 219, 219, 0.2);
   transform: translate(-50%, -50%);
-  transition:
-    width 0.4s ease,
-    height 0.4s ease;
+  transition: width 0.4s ease, height 0.4s ease;
 }
 
 .command-btn:hover::before {
@@ -104,32 +102,22 @@
   border-color: #00ff41;
   transform: scale(1.05);
   text-shadow: none;
-  animation:
-    glitchBorder 0.3s ease-in-out infinite,
-    colorShift 2s linear infinite;
+  animation: glitchBorder 0.3s ease-in-out infinite, colorShift 2s linear infinite;
 }
 
 @keyframes glitchBorder {
   0%,
   100% {
-    box-shadow:
-      2px 2px 0 #00ff41,
-      -2px -2px 0 #ff00ff;
+    box-shadow: 2px 2px 0 #00ff41, -2px -2px 0 #ff00ff;
   }
   25% {
-    box-shadow:
-      -2px 2px 0 #00ff41,
-      2px -2px 0 #ff00ff;
+    box-shadow: -2px 2px 0 #00ff41, 2px -2px 0 #ff00ff;
   }
   50% {
-    box-shadow:
-      2px -2px 0 #00ff41,
-      -2px 2px 0 #ff00ff;
+    box-shadow: 2px -2px 0 #00ff41, -2px 2px 0 #ff00ff;
   }
   75% {
-    box-shadow:
-      -2px -2px 0 #00ff41,
-      2px 2px 0 #ff00ff;
+    box-shadow: -2px -2px 0 #00ff41, 2px 2px 0 #ff00ff;
   }
 }
 
@@ -168,4 +156,5 @@
 
 [class*='index_editorWithTopBar'] {
   min-height: 400px;
+  max-height: 400px;
 }
